@@ -419,13 +419,23 @@ fn create_and_mint<'info>(
 
     // changes the update authority, primary sale happened, authorization rules
 
-    let mut update_args = UpdateArgs::default();
-    let UpdateArgs::V1 {
+    let mut update_args = UpdateArgs::default_v1(); // MI: not exist default(), use default_v1()
+    // MI: syntax not supported, compiler error (rustc 1.65.0)
+    // let UpdateArgs::V1 {
+    //     new_update_authority,
+    //     primary_sale_happened,
+    //     rule_set,
+    //     ..
+    // } = &mut update_args;
+
+    // MI: instead use this
+    let (new_update_authority, primary_sale_happened, rule_set) = if let UpdateArgs::V1 {
         new_update_authority,
         primary_sale_happened,
         rule_set,
         ..
-    } = &mut update_args;
+    } = &mut update_args { (new_update_authority, primary_sale_happened, rule_set) } else { todo!() };
+
     // set the update authority to the update authority of the collection NFT
     *new_update_authority = Some(collection_metadata.update_authority);
     // set primary sale happened to true
