@@ -67,10 +67,10 @@ jobs:
         with:
           toolchain: ${{ env.RUST_VERSION }}
 
-      - name: Install Solana
-        uses: metaplex-foundation/actions/install-solana@v1
+      - name: Install Miraland
+        uses: metaplex-foundation/actions/install-miraland@v1
         with:
-          version: ${{ env.SOLANA_VERSION }}
+          version: ${{ env.MIRALAND_VERSION }}
           cache: ${{ env.CACHE }}
 
       - name: Install Anchor CLI
@@ -141,7 +141,7 @@ jobs:
         run: |
           echo "Deploying ${{ inputs.program }} to ${{ inputs.cluster }}"
 
-          solana -v program deploy ./programs/${{ inputs.program }}/target/deploy/${{ env.PROGRAM_NAME }}.so \
+          miraland -v program deploy ./programs/${{ inputs.program }}/target/deploy/${{ env.PROGRAM_NAME }}.so \
             -u ${{ env.RPC }} \
             --program-id ./program-id.json \
             -k ./deploy-key.json
@@ -154,7 +154,7 @@ jobs:
           anchor idl upgrade -f ./idl.json \
             --provider.cluster ${{ env.RPC }} \
             --provider.wallet ../../deploy-key.json \
-            `solana address -k ../../program-id.json`
+            `miraland address -k ../../program-id.json`
             
           rm ../../deploy-key.json
           rm ../../program-id.json

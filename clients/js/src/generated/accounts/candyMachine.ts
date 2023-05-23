@@ -97,7 +97,7 @@ export function getCandyMachineGpaBuilder(
   const s = context.serializer;
   const programId = context.programs.getPublicKey(
     'mplCandyMachineCore',
-    'CndyV3LdqHUfDLmE5naZjVN8rBZz4tqhdefbAnjHG3JR'
+    'CMv3YQQ7nbhFUjArAcGuRcDa6avoYN1a72HRZMvJ6WnU'
   );
   return gpaBuilder(context, programId)
     .registerFields<{

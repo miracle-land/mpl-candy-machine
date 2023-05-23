@@ -5,7 +5,7 @@ on:
     inputs:
       rust:
         type: string
-      solana:
+      miraland:
         type: string
   workflow_dispatch:
     inputs:
@@ -14,9 +14,9 @@ on:
         default: 1.65.0
         required: true
         type: string
-      solana:
-        description: Solana version
-        default: 1.14.13
+      miraland:
+        description: Miraland version
+        default: 1.14.17
         required: true
         type: string
 
@@ -39,10 +39,10 @@ jobs:
         with:
           toolchain: ${{ inputs.rust || env.RUST_VERSION }}
 
-      - name: Install Solana
-        uses: metaplex-foundation/actions/install-solana@v1
+      - name: Install Miraland
+        uses: metaplex-foundation/actions/install-miraland@v1
         with:
-          version: ${{ inputs.solana || env.SOLANA_VERSION }}
+          version: ${{ inputs.miraland || env.MIRALAND_VERSION }}
           cache: ${{ env.CACHE }}
 
       - name: Cache program dependencies

@@ -15,7 +15,7 @@ module.exports = {
     programs: [
       {
         label: "Candy Machine Core",
-        programId: "CndyV3LdqHUfDLmE5naZjVN8rBZz4tqhdefbAnjHG3JR",
+        programId: "CMv3YQQ7nbhFUjArAcGuRcDa6avoYN1a72HRZMvJ6WnU",
         deployPath: getProgram(
           "candy-machine-core",
           "mpl_candy_machine_core.so"
@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         label: "Candy Guard",
-        programId: "Guard1JwRhJkVH6XZhzoYxeBVQe872VH6QggF4BWmS9g",
+        programId: "cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK",
         deployPath: getProgram("candy-guard", "mpl_candy_guard.so"),
       },
       {

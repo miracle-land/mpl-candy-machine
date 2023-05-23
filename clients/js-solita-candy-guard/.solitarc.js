@@ -15,7 +15,7 @@ const idlHook = (idl) => {
 module.exports = {
   idlGenerator: 'anchor',
   programName: 'candy_guard',
-  programId: 'Guard1JwRhJkVH6XZhzoYxeBVQe872VH6QggF4BWmS9g',
+  programId: 'cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK',
   idlDir,
   idlHook,
   sdkDir,

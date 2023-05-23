@@ -1,14 +1,15 @@
 [package]
-name = "mpl-candy-guard-derive"
+name = "miraplex-candy-guard-derive"
 version = "0.2.0"
 edition = "2021"
-description = "Procedural macro for automating the implementation of Metaplex Candy Guard."
+description = "Procedural macro for automating the implementation of Miraplex Candy Guard."
 authors = ["Metaplex Developers <dev@metaplex.com>"]
 repository = "https://github.com/metaplex-foundation/mpl-candy-guard"
 license-file = "../LICENSE"
 
 [lib]
 proc-macro = true
+name = "mpl_candy_guard_derive"
 
 [dependencies]
 syn = { version = "1.0.98", features = ["extra-traits"] }

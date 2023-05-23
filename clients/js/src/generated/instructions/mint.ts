@@ -99,7 +99,7 @@ export function mint(
   const programId = {
     ...context.programs.getPublicKey(
       'mplCandyGuard',
-      'Guard1JwRhJkVH6XZhzoYxeBVQe872VH6QggF4BWmS9g'
+      'cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK'
     ),
     isWritable: false,
   };
@@ -119,7 +119,7 @@ export function mint(
     input.candyMachineProgram ?? {
       ...context.programs.getPublicKey(
         'mplCandyMachine',
-        'CndyV3LdqHUfDLmE5naZjVN8rBZz4tqhdefbAnjHG3JR'
+        'CMv3YQQ7nbhFUjArAcGuRcDa6avoYN1a72HRZMvJ6WnU'
       ),
       isWritable: false,
     }

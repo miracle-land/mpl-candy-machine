@@ -24,7 +24,7 @@ jobs:
         uses: metaplex-foundation/actions/start-validator@v1
         with:
           node: ${{ matrix.node }}
-          solana: ${{ env.SOLANA_VERSION }}
+          miraland: ${{ env.MIRALAND_VERSION }}
           cache: ${{ env.CACHE }}
 
       - name: Install dependencies
