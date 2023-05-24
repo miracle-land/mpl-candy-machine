@@ -94,7 +94,7 @@ export class FreezeEscrow implements FreezeEscrowArgs {
    * @param programId - the program that owns the accounts we are filtering
    */
   static gpaBuilder(
-    programId: web3.PublicKey = new web3.PublicKey('cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK'),
+    programId: web3.PublicKey = new web3.PublicKey('CguarSUzT8jJEudNF9adPGeQnwcaf7i5CgFWdRbLEvfN'),
   ) {
     return beetSolana.GpaBuilder.fromStruct(programId, freezeEscrowBeet);
   }

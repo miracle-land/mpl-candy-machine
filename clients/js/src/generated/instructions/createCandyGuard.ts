@@ -85,7 +85,7 @@ export function createCandyGuard(
   const programId = {
     ...context.programs.getPublicKey(
       'mplCandyGuard',
-      'cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK'
+      'CguarSUzT8jJEudNF9adPGeQnwcaf7i5CgFWdRbLEvfN'
     ),
     isWritable: false,
   };

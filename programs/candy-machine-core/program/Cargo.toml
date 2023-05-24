@@ -1,6 +1,6 @@
 [package]
 name = "miraplex-candy-machine-core"
-version = "1.0.4"
+version = "1.0.1"
 description = "NFT Candy Machine Core: programmatic and trustless NFT drops."
 authors = ["Metaplex Developers <dev@metaplex.com>"]
 repository = "https://github.com/miracle-land/mpl-candy-machine"
@@ -18,7 +18,7 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = { package = "solarti-anchor-lang", version = "0.27.0" }
+anchor-lang = { package = "solarti-anchor-lang", version = "0.26.0" }
 arrayref = "0.3.6"
 mpl-token-auth-rules = { package = "miraplex-token-auth-rules", version = "1.3.2", features = ["no-entrypoint"] }
 mpl-token-metadata = { package ="miraplex-token-metadata", version = "1.7.1", features = ["no-entrypoint"] }

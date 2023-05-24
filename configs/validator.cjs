@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         label: "Candy Guard",
-        programId: "cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK",
+        programId: "CguarSUzT8jJEudNF9adPGeQnwcaf7i5CgFWdRbLEvfN",
         deployPath: getProgram("candy-guard", "mpl_candy_guard.so"),
       },
       {

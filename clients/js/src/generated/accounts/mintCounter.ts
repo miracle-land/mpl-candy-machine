@@ -98,7 +98,7 @@ export function getMintCounterGpaBuilder(
   const s = context.serializer;
   const programId = context.programs.getPublicKey(
     'mplCandyGuard',
-    'cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK'
+    'CguarSUzT8jJEudNF9adPGeQnwcaf7i5CgFWdRbLEvfN'
   );
   return gpaBuilder(context, programId)
     .registerFields<{ count: number }>({ count: [0, s.u16()] })
@@ -128,7 +128,7 @@ export function findMintCounterPda(
   const s = context.serializer;
   const programId = context.programs.getPublicKey(
     'mplCandyGuard',
-    'cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK'
+    'CguarSUzT8jJEudNF9adPGeQnwcaf7i5CgFWdRbLEvfN'
   );
   return context.eddsa.findPda(programId, [
     s.string({ size: 'variable' }).serialize('mint_limit'),

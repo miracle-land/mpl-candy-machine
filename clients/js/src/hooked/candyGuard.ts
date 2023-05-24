@@ -155,7 +155,7 @@ export function getCandyGuardGpaBuilder<D extends GuardSet = DefaultGuardSet>(
   const s = context.serializer;
   const programId = context.programs.getPublicKey(
     'mplCandyGuard',
-    'cgrdgM8aM2K2vCyKx3XRgF24qfFJnbNsvEa8EmRi4tK'
+    'CguarSUzT8jJEudNF9adPGeQnwcaf7i5CgFWdRbLEvfN'
   );
   return gpaBuilder(context, programId)
     .registerFields<{
