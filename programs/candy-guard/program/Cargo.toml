@@ -28,4 +28,4 @@ mpl-token-auth-rules = { package = "miraplex-token-auth-rules", version = "1.3.2
 miraland-program = "=1.14.17-rc5"
 spl-associated-token-account = { package = "solarti-associated-token-account", version = "1.1.6", features = ["no-entrypoint"] }
 spl-token = { package = "solarti-token", version = "3.5.4", features = ["no-entrypoint"] }
-miraland-gateway = "0.2.0"
+miraland-gateway = "0.1.0"
